@@ -4,6 +4,7 @@ const available_seat = document.getElementById("available-seat");
 const total_price_element = document.getElementById("total-price");
 const cupon_input_element = document.getElementById("cupon-input-field");
 const cupon_btn = document.getElementById("cupon-btn");
+const grand_total_element = document.getElementById("grand-total");
 let selectedSeat = [];
 let totalPrice = 0;
 function handleSelectSeat(event) {
@@ -45,3 +46,23 @@ function handleSelectSeat(event) {
     return alert("Maximum seat booked");
   }
 }
+
+// Cupon button function
+cupon_btn.addEventListener("click", () => {
+  const cupon_input_value = cupon_input_element.value;
+  let cuponSave = 0;
+  if (cupon_input_value !== "NEW50" && cupon_input_value !== "Couple 20") {
+    return alert("Your provided cupon is not valid");
+  }
+  if (cupon_input_value === "NEW50") {
+    cuponSave = totalPrice * 0.15;
+  } else if (cupon_input_value === "Couple 20") {
+    cuponSave = totalPrice * 0.2;
+  }
+
+  const grand_total_value = totalPrice - cuponSave;
+  grand_total_element.innerText = grand_total_value.toFixed(2);
+  cupon_input_element.value = "";
+  cupon_input_element.setAttribute("disabled", true);
+  cupon_btn.setAttribute("disabled", true);
+});
