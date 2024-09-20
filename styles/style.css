@@ -1,0 +1,11 @@
+body,
+button,
+a {
+  font-family: "Inter", system-ui;
+}
+h1 {
+  font-family: "Raleway", system-ui;
+}
+body {
+  background: #eeeeee99;
+}
