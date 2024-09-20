@@ -5,6 +5,8 @@ const total_price_element = document.getElementById("total-price");
 const cupon_input_element = document.getElementById("cupon-input-field");
 const cupon_btn = document.getElementById("cupon-btn");
 const grand_total_element = document.getElementById("grand-total");
+const phone_number_EL = document.getElementById("phone-number");
+const next_btn = document.getElementById("next-btn");
 let selectedSeat = [];
 let totalPrice = 0;
 function handleSelectSeat(event) {
@@ -62,7 +64,25 @@ cupon_btn.addEventListener("click", () => {
 
   const grand_total_value = totalPrice - cuponSave;
   grand_total_element.innerText = grand_total_value.toFixed(2);
-  cupon_input_element.value = "";
-  cupon_input_element.setAttribute("disabled", true);
-  cupon_btn.setAttribute("disabled", true);
+  //   Show cupon price
+  const show_cupon_price = document.getElementById("show-cupon-price");
+  show_cupon_price.innerHTML = `
+  <p>Discount</p>
+  <p>
+  <span>-BDT: </span>
+  <span>${cuponSave.toFixed(2)}</span>
+  
+  </p>
+  `;
+});
+
+phone_number_EL.addEventListener("input", (event) => {
+  const input_value = event.target.value;
+  if (input_value.length === 11) {
+    next_btn.removeAttribute("disabled");
+  }
+});
+
+document.getElementById("close-btn").addEventListener("click", () => {
+  location.reload();
 });
