@@ -144,7 +144,7 @@
                   <p>Departure Time</p>
                   <p>9:00 PM</p>
                 </div>
-                <div class="flex justify-between items-center">
+                <div class="flex flex-col gap-5 md:flex-row justify-between items-center">
                   <p class="bg-slate-300 p-5 rounded-xl">
                     Boarding Point - Laxmipur
                   </p>
@@ -157,8 +157,8 @@
             </div>
           </div>
           <div class="border-l-2 border-dashed p-9">
-            <img src="images/fare.png" alt="Taka img" class="w-full" />
-            <h3 class="text-2xl font-bold text-center">550 Taka</h3>
+            <img src="images/fare.png" alt="Taka img" class="w-12 mx-auto md:w-1/2" />
+            <h3 class="text-2xl font-bold text-center my-4">550 Taka</h3>
             <p class="text-center">Per seat</p>
           </div>
         </div>
@@ -187,12 +187,12 @@
           <div class="border-b-2 my-4 border-dashed"></div>
           <!-- Seat section start -->
           <section
-            class="grid grid-cols-12 items-center gap-y-5 mr-20 font-Inter"
+            class="grid grid-cols-12 items-center gap-y-5 md:mr-20 font-Inter"
           >
             <!-- Front seat -->
             <p class="col-span-1"></p>
             <div
-              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+              class="col-span-11 grid grid-cols-10 md:gap-16 gap-2 items-center text-center"
             >
               <p class="col-span-8"></p>
               <button class="btn col-span-2">
@@ -203,7 +203,7 @@
             <!-- Row 1 -->
             <p class="col-span-1">A</p>
             <div
-              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+              class="col-span-11 grid grid-cols-10 md:gap-16 gap-2 items-center text-center"
             >
               <button
                 class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200" onclick="handleSelectSeat(this)"
@@ -230,7 +230,7 @@
             <!-- Row 2 -->
             <p class="col-span-1">B</p>
             <div
-              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+              class="col-span-11 grid grid-cols-10 md:gap-16 gap-2 items-center text-center"
             >
               <button
                 class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200" onclick="handleSelectSeat(this)"
@@ -258,7 +258,7 @@
             <!-- Row 3 -->
             <p class="col-span-1">C</p>
             <div
-              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+              class="col-span-11 grid grid-cols-10 md:gap-16 gap-2 items-center text-center"
             >
               <button
                 class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200" onclick="handleSelectSeat(this)"
@@ -286,7 +286,7 @@
             <!-- Row 4 -->
             <p class="col-span-1">D</p>
             <div
-              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+              class="col-span-11 grid grid-cols-10 md:gap-16 gap-2 items-center text-center"
             >
               <button
                 class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200" onclick="handleSelectSeat(this)"
@@ -314,7 +314,7 @@
             <!-- Row5 -->
             <p class="col-span-1">E</p>
             <div
-              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+              class="col-span-11 grid grid-cols-10 md:gap-16 gap-2 items-center text-center"
             >
               <button
                 class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200" onclick="handleSelectSeat(this)"
@@ -342,7 +342,7 @@
             <!-- Row 6 -->
             <p class="col-span-1">F</p>
             <div
-              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+              class="col-span-11 grid grid-cols-10 md:gap-16 gap-2 items-center text-center"
             >
               <button
                 class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200" onclick="handleSelectSeat(this)"
@@ -370,7 +370,7 @@
             <!-- Row 7 -->
             <p class="col-span-1">G</p>
             <div
-              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+              class="col-span-11 grid grid-cols-10 md:gap-16 gap-2 items-center text-center"
             >
               <button
                 class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200" onclick="handleSelectSeat(this)"
@@ -398,7 +398,7 @@
             <!-- Row 8 -->
             <p class="col-span-1">H</p>
             <div
-              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+              class="col-span-11 grid grid-cols-10 md:gap-16 gap-2 items-center text-center"
             >
               <button
                 class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200" onclick="handleSelectSeat(this)"
@@ -426,7 +426,7 @@
             <!-- Row 9 -->
             <p class="col-span-1">I</p>
             <div
-              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+              class="col-span-11 grid grid-cols-10 md:gap-16 gap-2 items-center text-center"
             >
               <button
                 class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200" onclick="handleSelectSeat(this)"
@@ -454,7 +454,7 @@
             <!-- Row 10 -->
             <p class="col-span-1">J</p>
             <div
-              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+              class="col-span-11 grid grid-cols-10 md:gap-16 gap-2 items-center text-center"
             >
               <button
                 class="col-span-2 btn btn-md hover:bg-secondary hover:text-white transition-colors duration-200" onclick="handleSelectSeat(this)"
@@ -480,7 +480,7 @@
             </div>
           </section>
         </div>
-        <div class="">
+        <div class="sm:mt-16">
           <!-- Input section -->
           <div>
             <h2 class="text-2xl font-semibold text-secondary">
