@@ -38,3 +38,7 @@ const showRental = setInterval(() => {
     clearInterval(showRental);
   }
 }, 30);
+
+const date = new Date();
+const year = date.getFullYear();
+document.getElementById("current_year").innerText = year;
